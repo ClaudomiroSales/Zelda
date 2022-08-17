@@ -9,6 +9,11 @@ public:
 
     void print( ) const;
 
+    int getStrength( ) const;
+    int getDurability( ) const;
+    void setStrength( double );
+    void setDurability( int );
+
 private:
 
     double strength;
