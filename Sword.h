@@ -15,6 +15,7 @@ public:
     int getDurability( ) const;
     void setStrength( double );
     void setDurability( int );
+    double getMAXATTACK( ) const;
 
 private:
 

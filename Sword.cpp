@@ -46,6 +46,11 @@ int Sword::getDurability( ) const
     return durability;
 }
 
+double Sword::getMAXATTACK( ) const
+{
+    return MAXATTACK;
+}
+
 void Sword::setStrength( double strength )
 {
     if( strength >= 0 )

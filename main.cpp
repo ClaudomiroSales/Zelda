@@ -23,6 +23,8 @@ int main( )
     //Se fosse criado um método que tentasse alterar o máximo ataque ocorreria um erro
     //MAXATTACK só pode ser configurado na inicialização
 
+    cout << "\n\n Maximo ataque de Royal Guard Sword " << royalGuardSword.getMAXATTACK( ) << '\n';
+
 
     return 0;
 
