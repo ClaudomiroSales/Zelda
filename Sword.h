@@ -6,6 +6,7 @@ class Sword
 public:
     Sword();
     Sword( double, int = 100 );
+    Sword( const Sword & );//Passagem por refência
     ~Sword();
 
     void print( ) const;

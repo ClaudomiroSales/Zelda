@@ -17,6 +17,12 @@ Sword::Sword( double strength, int durability )
    setDurability( durability );
 }
 
+Sword::Sword( const Sword& other )
+{
+    this->strength = other.strength;
+    this->durability = other.durability;
+}
+
 Sword::~Sword( )
 {  
 
