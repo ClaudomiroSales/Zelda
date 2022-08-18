@@ -6,18 +6,15 @@ using std::cout;
 
 int main( )
 {
-    int durability = 10;
-    
+    double strength = 2;
+    int durability = 4;
+        
     Sword royalGuardSword;
+    cout << "Royal Guard Sword\n";
     royalGuardSword.print();
-
-    cout << "Usando metodo get para obter a durabilidade: " 
-         << royalGuardSword.getDurability() << "\n";
-    
-    cout << "Usando metodo set para configurar a durabilidade\n";
-    royalGuardSword.setDurability( durability );
-
-    cout << "Apos o novo valor: " << royalGuardSword.getDurability() << "\n";
+    Sword badGuardSword(strength, durability);
+    cout << "Bad Guard Sword\n";
+    badGuardSword.print();    
 
     return 0;
 
