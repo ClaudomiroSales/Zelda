@@ -5,7 +5,7 @@ class Sword
 {
 public:
     Sword();
-    Sword( double, int = 100 );
+    Sword( double, int = 100, double = 1000 );
     Sword( const Sword & );//Passagem por refência
     ~Sword();
 
@@ -20,6 +20,8 @@ private:
 
     double strength;
     int durability;
+
+    const double MAXATTACK;
 
 };
 

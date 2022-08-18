@@ -4,20 +4,21 @@ using std::cout;
 #include "Sword.h"
 
 Sword::Sword( )
-:strength(48), durability(14)
+:strength(48), durability(14), MAXATTACK(1000)
 {
    //strength = 48;
    //durability = 14;
 }
 
-Sword::Sword( double strength, int durability )
+Sword::Sword( double strength, int durability, double MAXATTACK )
+:MAXATTACK(MAXATTACK)
 {
-   cout << "Inicializando Sword.\n";
    setStrength( strength );
    setDurability( durability );
 }
 
 Sword::Sword( const Sword& other )
+:MAXATTACK(other.MAXATTACK)
 {
     this->strength = other.strength;
     this->durability = other.durability;
@@ -32,6 +33,7 @@ void Sword::print( ) const
 {
     cout << "Strength: "   << strength << '\n';
     cout << "Durability: " << durability << '\n';
+    cout << "Maximo ataque permitido: " << MAXATTACK << '\n';
 }
 
 int Sword::getStrength( ) const
