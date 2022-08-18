@@ -6,7 +6,6 @@ using std::cout;
 Sword::Sword( )
 :strength(48), durability(14)
 {
-   cout << "Inicializando Sword no constructor.\n";
    //strength = 48;
    //durability = 14;
 }
