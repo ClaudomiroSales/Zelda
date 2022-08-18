@@ -5,7 +5,7 @@ class Sword
 {
 public:
     Sword();
-    Sword( double, int );
+    Sword( double, int = 100 );
     ~Sword();
 
     void print( ) const;

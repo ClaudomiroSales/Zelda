@@ -15,6 +15,9 @@ int main( )
     Sword badGuardSword(strength, durability);
     cout << "Bad Guard Sword\n";
     badGuardSword.print();    
+    Sword otherGuardSword(strength);
+    cout << "Other Guard Sword\n";
+    otherGuardSword.print();        
 
     return 0;
 
