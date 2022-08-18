@@ -4,10 +4,18 @@ using std::cout;
 #include "Sword.h"
 
 Sword::Sword( )
+:strength(48), durability(14)
 {
    cout << "Inicializando Sword no constructor.\n";
-   strength = 48;
-   durability = 14;
+   //strength = 48;
+   //durability = 14;
+}
+
+Sword::Sword( double strength, int durability )
+{
+   cout << "Inicializando Sword.\n";
+   setStrength( strength );
+   setDurability( durability );
 }
 
 Sword::~Sword( )
