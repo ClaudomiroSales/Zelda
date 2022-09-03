@@ -10,6 +10,7 @@ Sword::Sword( )
    durability = 14;
 }
 
+
 Sword::~Sword( )
 {  
 
@@ -19,4 +20,8 @@ void Sword::print( ) const
 {
     cout << "Strength: "   << strength << '\n';
     cout << "Durability: " << durability << '\n';
+}
+
+void Sword::useSword( ){
+    strength -= 2;
 }

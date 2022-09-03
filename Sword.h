@@ -8,6 +8,8 @@ public:
     ~Sword();
 
     void print( ) const;
+    void useSword( );
+    
 
 private:
 
